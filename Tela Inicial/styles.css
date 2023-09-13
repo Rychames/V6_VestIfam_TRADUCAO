@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0%;
+    overflow-x: hidden;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    z-index: 999;
+    border-bottom: 2px solid #A6A6A6;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: -15px;
+    margin-bottom: -20px;
+    overflow-y: hidden; /* Adicione essa linha */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 150px; /* Ajuste o valor conforme necessário */
+}
+
+.logo span {
+    margin-left: 10px; /* Ajuste o espaçamento conforme necessário */
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold; /* Ajuste a formatação da fonte conforme necessário */
+}
+
+.search-bar {
+    flex-grow: 0; /* Ajuste o valor conforme necessário */
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #7ED957;
+    padding: 7px;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    max-width: 200px; /* Ajuste a largura máxima conforme necessário */
+}
+
+.search-bar i {
+    padding: 0 8px;
+    color: #7ED957;
+}
+
+.login-button {
+    margin-right: 50px; /* Ajuste a margem conforme necessário */
+}
+
+.login-button button {
+    padding: 8px 12px;
+    background-color: #7ED957;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 75px;
+    cursor: pointer;
+}
+.login-button button:hover {
+    background-color: #009688; /* Altere para a cor desejada */
+  }
+  .logo-link,
+  .logo-link:hover,
+  .logo-link:visited {
+    text-decoration: none;
+    color: #000000; /* Altere para a cor desejada */
+  }
+  .highlighted {
+    background-color: rgba(255, 255, 0, 0.76);
+    color: #000000;
+  }
+
+/* Adicione o restante dos estilos que você já possui */
+
+/* Estilos para a sidebar */
+.sidebar {
+  display: none; /* Ocultar a sidebar por padrão em telas maiores */
+  position: fixed;
+  top: 0;
+  right: 0; /* Posicionar a sidebar no lado direito da tela */
+  width: 200px; /* Defina a largura da sidebar conforme desejado */
+  height: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  z-index: 9998; /* Certifique-se de que a sidebar esteja na frente dos outros elementos */
+  align-items: center;
+  flex-direction: column; /* Organizar os elementos verticalmente */
+  justify-content: flex-start; /* Alinhar os elementos no topo da sidebar */
+  align-items: center; /* Centralizar horizontalmente os elementos */
+
+}
+
+
+.sidebar .login-button {
+  /* Ajustar o espaçamento dos elementos na sidebar */
+  margin-top: 20px ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centralizar horizontalmente os elementos */
+  margin-bottom: 20px; /* Adicione um espaçamento entre os elementos */
+  width: 100%; /* Defina a largura total para que os elementos ocupem toda a largura da sidebar */
+}
+.sidebar .search-bar{
+  margin-top: 20px ;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Centralizar horizontalmente os elementos */
+  margin-bottom: 20px; /* Adicione um espaçamento entre os elementos */
+  width: 100%; /* Defina a largura total para que os elementos ocupem toda a largura da sidebar */
+}
+
+.sidebar .search-bar i,
+.sidebar .login-button button {
+  font-size: 18px;
+}
+
+/* Botão para fechar a sidebar */
+.close-button1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.close-button1 i {
+  color: #000000;
+}
+
+/* Responsividade para exibir a sidebar quando o menu hamburguer é clicado */
+.show-sidebar {
+  display: block;
+}
+
+/* Estilos para telas menores (Celulares, Tablets, etc.) */
+@media only screen and (max-width: 1280px) {
+  .nav-items {
+    display: none;
+    text-align: center; /* Centralizar os itens da barra de navegação */
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 80px;
+    top: 10px;
+  }
+
+  .fa-bars {
+    font-size: 24px;
+  }
+}
+
+
+
+  /* Estilos para telas maiores (Computadores, etc.) */
+@media only screen and (min-width: 769px) {
+    .nav-items {
+      display: flex;
+      align-items: center; /* Centralizar itens verticalmente */
+      justify-content: space-between; /* Alinhar os itens da barra de navegação na extremidade */
+      padding: 0 20px; /* Adicionar espaço horizontal à barra de navegação para centralizá-la */
+    }
+    .search-bar {
+      margin-right: 400px;
+    }
+  
+    .mobile-menu-icon {
+      display: none; /* Ocultar o ícone do menu em telas maiores */
+    }
+  
+    /* Adicione outras regras de estilo aqui para telas maiores, se necessário */
+  }
+  
+  /* Estilos para telas menores (Celulares, Tablets, etc.) */
+  @media only screen and (max-width: 1280px) {
+    .nav-items {
+      display: none;
+      text-align: center; /* Centralizar os itens da barra de navegação */
+    }
+  
+    .search-bar {
+      margin-bottom: 10px; /* Adicionar espaço entre a barra de pesquisa e o botão de login em telas menores */
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+      position: absolute; /* Alterar a posição do ícone do menu */
+      right: 80px; /* Ajustar o espaço à direita do ícone (aumente esse valor para afastá-lo mais da borda direita) */
+      top: 10px; /* Ajustar o espaço acima do ícone */
+    }
+  
+    /* Ícone do menu do Font Awesome */
+    .fa-bars {
+      font-size: 24px;
+    }
+  }
+  
+  /* Adicione esta regra ao CSS */
+  .nav-items.show {
+    display: block; /* Mostrar os itens da barra de navegação quando a classe "show" for aplicada */
+  }
+  
+  

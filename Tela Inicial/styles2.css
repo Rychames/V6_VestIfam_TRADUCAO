@@ -1,0 +1,31 @@
+/* Estilos para telas maiores (Computadores, etc.) */
+.green-background {
+    background-color: #3e4677;
+    padding: 20px;
+    margin-top: 120px;
+    width: 100%;
+    height: auto;
+    overflow-y: hidden;
+  }
+  
+  .green-background p {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilos para telas menores (Celulares, Tablets, etc.) */
+  @media only screen and (max-width: 1280px) {
+    .green-background {
+      font-size: 18px;
+      padding: 10px;
+    }
+  
+    .green-background p {
+      word-break: keep-all;
+      font-size: 20px;
+    }
+  }
+  

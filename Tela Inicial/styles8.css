@@ -1,0 +1,118 @@
+/* Estilo para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 10000;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 40px;
+}
+
+/* Estilo para o botão de fechar */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Estilo para centralizar o cabeçalho h2 */
+.modal-content h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  white-space: pre-line;
+  overflow: hidden;
+}
+.modal-content p{
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Estilo para posicionar os campos no formulário e adicionar espaçamento */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group input {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 99%;
+  height: 37px;
+  border-color: #007bff;
+  border-radius: 15px;
+}
+
+/* Estilo para os botões de login */
+.buttons-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centralizar verticalmente os botões */
+  margin-bottom: 30px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  max-width: 30%;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#buttonDiv iframe {
+  height: 36px !important;
+}
+
+/* Estilo para desabilitar a rolagem quando o modal estiver aberto */
+body.modal-open {
+  overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .form-group input {
+    width: 100%;
+    
+  }
+  
+  button[type="submit"] {
+    max-width: 99%;
+
+  }
+}

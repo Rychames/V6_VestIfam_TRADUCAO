@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesQuizQuestions.css"> <!-- Substitua pelo caminho do seu arquivo CSS -->
+        <title>QUIZ</title>
+    </head>
+    <body>
+        <div class="Screendecision">
+            <div class="Painel">
+                <div class="Questions">
+                    <div class="quiz-container">
+                        <button class="quiz-button" id="opcaoA"></button>
+                        <button class="quiz-button" id="opcaoB"></button>
+                        <button class="quiz-button" id="opcaoC"></button>
+                        <button class="quiz-button" id="opcaoD"></button>
+                        <button class="quiz-button" id="opcaoE"></button>
+                    </div>
+                </div>
+
+                <div class="Backquestion">
+                    <h1 id="numberQuestion"></h1>
+                    <img class="Imgquestion" src="elementosQuiz/imgQuestion.png" />
+                    <h1 id="Txtquestion"></h1>
+
+                    <div id="relogio-segundos"></div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="ResolutionContainer" style="display: none;">
+            <div class="ResolutionMessage"></div>
+            <img class="Imgquestion" src="elementosQuiz/imgQuestion.png" />
+        </div>
+
+        <script src="quizQuestion.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,25 @@
+.image-container3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px; /* Ajuste o espaçamento entre as imagens conforme desejado */
+  margin-top: 150px;
+  margin-bottom: -40px;
+}
+
+.image-container3 img {
+  width: 200px; /* Ajuste a largura das imagens conforme desejado */
+  height: auto; 
+}
+
+/* Responsividade para telas menores (Celulares, Tablets, etc.) */
+@media only screen and (max-width: 1280px) {
+  .image-container3 {
+    flex-wrap: wrap; /* Empilhar as imagens verticalmente em telas menores */
+    justify-content: center; /* Centralizar as imagens na tela */
+  }
+
+  .image-container3 img {
+    width: 45%; /* Ajuste a largura das imagens em telas menores */
+    max-width: 200px; /* Defina uma largura máxima para evitar que as imagens fiquem muito grandes em telas pequenas */
+  }
+}
