@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.center-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.caption{
+    font-weight: bold;
+
+}
+.textoembaixo{
+    text-align: center;
+
+}
+.image15,
+.image16,
+.image17,
+.image18,
+.image19
+{
+    width: 20%; /* ajuste o valor de acordo com o tamanho desejado */
+    overflow: hidden;
+}
+
+.image15 img,
+.image16 img,
+.image17 img,
+.image18 img,
+.image19 img {
+    width: 100%;
+}
+
+.caption {
+    text-align: center;
+}
+a {
+    color: black;
+    text-decoration: none;
+  }
+  .image16:hover,
+.image17:hover,
+.image18:hover {
+  filter: brightness(90%); /* Adjust the value to achieve the desired effect */
+}
+/* Responsividade para telas menores (Celulares, Tablets, etc.) */
+@media only screen and (max-width: 1280px) {
+    .center-images {
+      flex-direction: column; /* Empilhar as imagens verticalmente */
+    }
+  
+    .image15,
+    .image16,
+    .image17,
+    .image18,
+    .image19 {
+      width: 60%; /* Ocupar a largura total da tela em telas menores */
+    }
+  }

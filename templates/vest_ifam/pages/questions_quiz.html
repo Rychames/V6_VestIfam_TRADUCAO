@@ -1,0 +1,38 @@
+{% extends "vest_ifam/base.html" %}
+{% load static %}
+{% block title %}QUIZ{% endblock title %}
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'vest_ifam/css/quiz/stylesQuizQuestions.css'%}">  
+{% endblock extra_style %}
+    
+{% block content %}    
+    <div class="Screendecision">
+        <div class="Painel">
+            <div class="Questions">
+                <div class="quiz-container">
+                    <button class="quiz-button" id="opcaoA"></button>
+                    <button class="quiz-button" id="opcaoB"></button>
+                    <button class="quiz-button" id="opcaoC"></button>
+                    <button class="quiz-button" id="opcaoD"></button>
+                    <button class="quiz-button" id="opcaoE"></button>
+                </div>
+            </div>
+
+            <div class="Backquestion">
+                <h1 id="numberQuestion"></h1>
+                <img class="Imgquestion" src="{% static 'vest_ifam/images/quiz/imgQuestion.png' %}" />
+                <h1 id="Txtquestion"></h1>
+                <div id="relogio-segundos"></div>  
+            </div>
+        </div>
+    </div>
+    <div class="ResolutionContainer" style="display: none;">
+        <div class="ResolutionMessage"></div>
+        <img class="Imgquestion" src="{% static 'vest_ifam/images/quiz/imgQuestion.png' %}" />
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+<script src="{% static 'vest_ifam/js/quiz/quizQuestion.js'%}"></script>
+{% endblock scripts %}

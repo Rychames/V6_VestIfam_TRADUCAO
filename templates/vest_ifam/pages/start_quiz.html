@@ -1,0 +1,37 @@
+{% extends "vest_ifam/base.html" %}
+{% load static %}
+{% block title %}QUIZ{% endblock title %}
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'vest_ifam/css/quiz/stylesQuizIntro.css' %}">
+{% endblock extra_style %}
+
+{% block content %}
+    <div class="Screentutoras">
+        <div class="Divprincipal">
+            <img class="Backgroundintroducao" src="{% static 'vest_ifam/images/quiz/backgroundIntroducao.png' %}" alt="Background" />
+            <div class="Btnstarttutora">
+                <div class="Btnstarttutora-inner">
+                    <a href="{% url 'vest_ifam:questions_quiz' %}" class="Iniciar">INICIAR</a>
+                </div>
+            </div>
+            <div class="Logovestifam">
+                <img class="Logovestifam-inner" src="{% static 'vest_ifam/images/quiz/logoVestIFAM.png' %}" alt="Logo" />
+            </div>
+            <div class="Txtintro2">
+                <div class="Txtsubintro2">Não se esqueçam de conferir sua resposta antes de enviá-la, pois uma vez submetida, não poderá ser alterada.</div>
+                <div class="Instructioncircle2"></div>
+                <div class="NumberCircle">2</div>
+            </div>
+            <div class="Txtintro1">
+                <div class="CadaPerguntaTerApenasUmaRespostaCorretaVocTerUmTempoLimitadoParaResponderEntOFiqueLigado">Cada pergunta terá apenas uma resposta correta, você terá um tempo limitado para responder, então fique ligado!</div>
+                <div class="Instructioncircle1"></div>
+                <div class="NumberCircle">1</div>
+            </div>
+            <div class="Txtmain">Bem-vindos a este empolgante quiz dos obtidos até aqui conhecimentos! Antes de começarmos, vamos às regras:</div>
+            <div class="Txttitle">
+                <span class="Txttitle-span1"></span>
+                <span class="Txttitle-span2">TESTE SEUS<br/>CONHECIMENTOS</span>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

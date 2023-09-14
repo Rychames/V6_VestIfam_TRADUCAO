@@ -1,0 +1,216 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family: "Concert One"; /* Nome que você deseja dar à fonte */
+    src: url("../../fonts/ConcertOne-Regular.ttf") format("truetype"); /* Substitua pelo caminho correto */
+}
+@font-face {
+    font-family: "Preahvihear"; /* Nome que você deseja dar à fonte */
+    src: url("../../fonts/Preahvihear-Regular.ttf") format("truetype"); /* Substitua pelo caminho correto */
+}
+@font-face {
+    font-family: "Montserrat"; /* Nome que você deseja dar à fonte */
+    src: url("../../fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype"); /* Substitua pelo caminho correto */
+}
+
+.Screentutoras {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 26px;
+    background: #7D86BB;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.Divprincipal {
+    width: 1316px;
+    height: 806px;
+    position: relative;
+}
+
+.Backgroundintroducao {
+    width: 1200px;
+    height: auto;
+    left: 60px;
+    top: 88px;
+    position: absolute;
+}
+
+.Btnstarttutora {
+    width: 100px;
+    height: 29px;
+    left: 533px;
+    top: 662px;
+    position: absolute;
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: flex-start;
+}
+
+.Btnstarttutora-inner {
+    width: 200px;
+    height: 10px;
+    background: #7ED957;
+    box-shadow: 5px 6px 0px 5px rgba(255, 255, 255, 0.25) inset;
+    border-radius: 32px;
+    overflow: hidden;
+    border: 2px #3E4677 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centralizar verticalmente */
+    padding: 26px 119px 33px 129px; /* Ajuste os espaçamentos */
+    position: relative;
+}
+
+.Iniciar {
+    text-align: center;
+    color: #3E4677;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+
+.Logovestifam {
+    width: 148px;
+    height: 101px;
+    left: 18px;
+    top: 0px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.Logovestifam-inner {
+    width: 148px;
+    height: 101px;
+}
+
+.Txtintro2 {
+    width: 1067px;
+    height: 52px;
+    left: 135px;
+    top: 564px;
+    position: absolute;
+}
+
+.Txtsubintro2 {
+    width: 1006px;
+    height: 52px;
+    left: 61px;
+    top: 0px;
+    position: absolute;
+    text-align: center;
+    color: #4B426F;
+    font-size: 25px;
+    font-family: Preahvihear;
+    font-weight: 400;
+    line-height: 31.01px;
+    word-wrap: break-word;
+}
+
+.Instructioncircle2 {
+    width: 47px;
+    height: 45px;
+    left: 30px;
+    top: 0px;
+    position: absolute;
+    background: #4B426F;
+    border-radius: 9999px;
+}
+
+.NumberCircle {
+    width: 22px;
+    height: 25px;
+    left: 42px;
+    top: 7px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: Preahvihear;
+    font-weight: 400;
+    line-height: 31.01px;
+    word-wrap: break-word;
+}
+
+.Txtintro1 {
+    width: 1067px;
+    height: 68px;
+    left: 135px;
+    top: 453px;
+    position: absolute;
+}
+
+.CadaPerguntaTerApenasUmaRespostaCorretaVocTerUmTempoLimitadoParaResponderEntOFiqueLigado {
+    width: 1008px;
+    height: 68px;
+    left: 59px;
+    top: 0px;
+    position: absolute;
+    text-align: center;
+    color: #4B426F;
+    font-size: 25px;
+    font-family: Preahvihear;
+    font-weight: 400;
+    line-height: 31.01px;
+    word-wrap: break-word;
+}
+
+.Instructioncircle1 {
+    width: 47px;
+    height: 45px;
+    left: 30px;
+    top: 0px;
+    position: absolute;
+    background: #4B426F;
+    border-radius: 9999px;
+}
+
+.Txtmain {
+    width: 1000px;
+    height: 91px;
+    left: 190px;
+    top: 329px;
+    position: absolute;
+    text-align: center;
+    color: #4B426F;
+    font-size: 30px;
+    font-family: Preahvihear;
+    font-weight: 400;
+    line-height: 31.01px;
+    word-wrap: break-word;
+}
+
+.Txttitle {
+    width: 460px;
+    height: 206px;
+    left: 434px;
+    top: 163px;
+    position: absolute;
+    text-align: center;
+}
+
+.Txttitle-span1 {
+    color: #544497;
+    font-size: 40px;
+    font-family: Concert One;
+    font-weight: 400;
+    line-height: 38.76px;
+    word-wrap: break-word;
+}
+
+.Txttitle-span2 {
+    color: #544497;
+    font-size: 64px;
+    font-family: Concert One;
+    font-weight: 400;
+    line-height: 62.02px;
+    word-wrap: break-word;
+}

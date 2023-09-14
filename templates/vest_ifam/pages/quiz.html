@@ -1,0 +1,33 @@
+{% extends "vest_ifam/base.html" %}
+{% load static %}
+
+{% block title %}QUIZ{% endblock title %}
+{% block extra_style %}
+<link rel="stylesheet" href="{% static 'vest_ifam/css/quiz/stylesQUIZ.css'%}">
+{% endblock extra_style %}
+
+{% block content %}
+    <div class="molduraTela" id="quizContainer">
+        <div class="painel">
+            <div class="logoVestIfam">
+                <img src="{% static 'vest_ifam/images/quiz/logoVestIFAM.png' %}" alt="Logo VestIfam" class="logoVestIfam-img" />
+            </div>
+            <div class="txtHRQ">
+                <img src="{% static 'vest_ifam/images/quiz/txtQUIZ.png' %}" alt="HoraDoQuiz" />
+            </div>
+            <div class="start">
+                <a href="{% url "vest_ifam:start_quiz" %}" id="startBTN">Start</a>
+            </div>      
+            <div class="elementosQUIZ">
+                <ul class="icon-list">
+                    <li class="Icon Lamp1"><img src="{% static 'vest_ifam/images/quiz/lamp1.png' %}" alt="Lamp 1" /></li>
+                    <li class="Icon Lamp2"><img src="{% static 'vest_ifam/images/quiz/lamp2.png' %}" alt="Lamp 2" /></li>
+                    <li class="Icon Pencil1"><img src="{% static 'vest_ifam/images/quiz/pencil1.png' %}" alt="Pencil 1" /></li>
+                    <li class="Icon Pencil2"><img src="{% static 'vest_ifam/images/quiz/pencil2.png' %}" alt="Pencil 2" /></li>
+                    <li class="Icon Book1"><img src="{% static 'vest_ifam/images/quiz/book1.png' %}" alt="Book 1" /></li>
+                    <li class="Icon Book2"><img src="{% static 'vest_ifam/images/quiz/book2.png' %}" alt="Book 2" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
